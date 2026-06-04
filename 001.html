@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>login</title>
+
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .login-box{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="login-box">
+
+        <h1>Login</h1>
+
+        <form method="POST">
+
+            <p>        
+                <input type="email" name="email" placeholder="Email">
+            </p>
+
+            <p>
+                <input type="password" name="password" placeholder="Password">
+            </p>
+
+        <button type="submit">Login</button>
+
+    </form>
+
+    {% if message %}
+        <p>{{ message }}</p>
+    {% endif %}
+
+    </div>
+
+</body>
+</html>

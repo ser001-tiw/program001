@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ฟอร์มหลายช่อง</title>
+</head>
+<style>
+input {
+    width: 500px;
+    height: 50px;
+}
+
+button {
+    width: 100px;
+    height: 50px;
+}
+</style>
+<body>
+
+    <h1>กรอกข้อมูล</h1>
+
+    <form method="POST">
+        <p>
+            <input type="text" name="name" placeholder="ชื่อ">
+        </p>
+
+        <p>
+            <input type="number" name="age" placeholder="อายุ">
+        </p>
+
+        <p>
+            <input type="email" name="email" placeholder="อีเมล">
+        </p>
+
+        <button type="submit">ส่งข้อมูล</button>
+    </form>
+
+    <hr>
+
+    <h2>ข้อมูลที่กรอก</h2>
+
+    <p>ชื่อ: {{ name }}</p>
+    <p>อายุ: {{ age }}</p>
+    <p>อีเมล: {{ email }}</p>
+
+</body>
+</html>
